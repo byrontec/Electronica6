@@ -1,0 +1,1 @@
+vhdtdtfi -prj SPINoiseInversor -o "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/PhaseController.vhi" -module PhaseController -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PhaseController.vhd 

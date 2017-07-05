@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Byron Paiz\Documents\ProyectoE6\SPINoiseInversor - copia\SPINoiseInversor\SPINoiseInversor.ncd
+OUTFILE=C:\Users\Byron Paiz\Documents\ProyectoE6\SPINoiseInversor - copia\SPINoiseInversor\SPINoiseInversor.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-4tq144
+WORKINGDIR=C:\Users\Byron Paiz\Documents\ProyectoE6\SPINoiseInversor - copia\SPINoiseInversor
+LICENSE=WebPack
+USER_INFO=211274601_0_0_751

@@ -1,0 +1,36 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Jul 03 01:09:46 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SPI_Address<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "SPI_Address<1>" LOCATE = SITE "P3" LEVEL 1;
+COMP "SPI_Address<2>" LOCATE = SITE "P5" LEVEL 1;
+COMP "SPI_Address<3>" LOCATE = SITE "P4" LEVEL 1;
+COMP "SPI_Inverted<0>" LOCATE = SITE "P19" LEVEL 1;
+COMP "SPI_Inverted<1>" LOCATE = SITE "P21" LEVEL 1;
+COMP "SPI_Inverted<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "SPI_Inverted<3>" LOCATE = SITE "P20" LEVEL 1;
+COMP "FEnable" LOCATE = SITE "P10" LEVEL 1;
+COMP "SPI_Inverted<4>" LOCATE = SITE "P15" LEVEL 1;
+COMP "SPI_Inverted<5>" LOCATE = SITE "P16" LEVEL 1;
+COMP "SPI_Inverted<6>" LOCATE = SITE "P12" LEVEL 1;
+COMP "SPI_Inverted<7>" LOCATE = SITE "P13" LEVEL 1;
+COMP "SPI_Inverted<8>" LOCATE = SITE "P132" LEVEL 1;
+COMP "SPI_MISO" LOCATE = SITE "P31" LEVEL 1;
+COMP "Clock" LOCATE = SITE "P129" LEVEL 1;
+COMP "SPI_MOSI" LOCATE = SITE "P32" LEVEL 1;
+COMP "SPI_CS" LOCATE = SITE "P30" LEVEL 1;
+COMP "SPI_Clock" LOCATE = SITE "P28" LEVEL 1;
+COMP "Phase_Offset<0>" LOCATE = SITE "P58" LEVEL 1;
+COMP "Phase_Offset<1>" LOCATE = SITE "P59" LEVEL 1;
+COMP "Phase_Offset<2>" LOCATE = SITE "P60" LEVEL 1;
+COMP "Phase_Offset<3>" LOCATE = SITE "P63" LEVEL 1;
+COMP "Phase_Offset<4>" LOCATE = SITE "P64" LEVEL 1;
+COMP "Phase_Offset<5>" LOCATE = SITE "P68" LEVEL 1;
+COMP "Phase_Offset<6>" LOCATE = SITE "P69" LEVEL 1;
+COMP "GEnable" LOCATE = SITE "P11" LEVEL 1;
+COMP "LoadFlag" LOCATE = SITE "P25" LEVEL 1;
+NET "Clock_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+SCHEMATIC END;
+

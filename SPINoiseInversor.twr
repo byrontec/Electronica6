@@ -1,0 +1,343 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o
+SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf
+
+Design file:              SPINoiseInversor.ncd
+Physical constraint file: SPINoiseInversor.pcf
+Device,package,speed:     xc3s50a,tq144,-4 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "Clock_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 7 paths analyzed, 5 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.936ns.
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_TOP_maquinas/Inst_relojes/cont_0 (SLICE_X6Y19.SR), 2 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     79.397ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_TOP_maquinas/Inst_relojes/cont_0 (FF)
+  Destination:          Inst_TOP_maquinas/Inst_relojes/cont_0 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      3.936ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clock_BUFGP rising at 0.000ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_TOP_maquinas/Inst_relojes/cont_0 to Inst_TOP_maquinas/Inst_relojes/cont_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y19.XQ       Tcko                  0.631   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_0
+    SLICE_X6Y18.F1       net (fanout=5)        0.636   Inst_TOP_maquinas/Inst_relojes/cont<0>
+    SLICE_X6Y18.X        Tilo                  0.692   Inst_TOP_maquinas/Inst_relojes/cont_cmp_eq0000
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_cmp_eq00001
+    SLICE_X6Y19.SR       net (fanout=1)        1.110   Inst_TOP_maquinas/Inst_relojes/cont_cmp_eq0000
+    SLICE_X6Y19.CLK      Tsrck                 0.867   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_0
+    -------------------------------------------------  ---------------------------
+    Total                                      3.936ns (2.190ns logic, 1.746ns route)
+                                                       (55.6% logic, 44.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     79.486ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_TOP_maquinas/Inst_relojes/cont_1 (FF)
+  Destination:          Inst_TOP_maquinas/Inst_relojes/cont_0 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      3.847ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clock_BUFGP rising at 0.000ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_TOP_maquinas/Inst_relojes/cont_1 to Inst_TOP_maquinas/Inst_relojes/cont_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y19.YQ       Tcko                  0.676   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_1
+    SLICE_X6Y18.F4       net (fanout=4)        0.502   Inst_TOP_maquinas/Inst_relojes/cont<1>
+    SLICE_X6Y18.X        Tilo                  0.692   Inst_TOP_maquinas/Inst_relojes/cont_cmp_eq0000
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_cmp_eq00001
+    SLICE_X6Y19.SR       net (fanout=1)        1.110   Inst_TOP_maquinas/Inst_relojes/cont_cmp_eq0000
+    SLICE_X6Y19.CLK      Tsrck                 0.867   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_0
+    -------------------------------------------------  ---------------------------
+    Total                                      3.847ns (2.235ns logic, 1.612ns route)
+                                                       (58.1% logic, 41.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_TOP_maquinas/Inst_relojes/cont_1 (SLICE_X6Y19.SR), 2 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     79.397ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_TOP_maquinas/Inst_relojes/cont_0 (FF)
+  Destination:          Inst_TOP_maquinas/Inst_relojes/cont_1 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      3.936ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clock_BUFGP rising at 0.000ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_TOP_maquinas/Inst_relojes/cont_0 to Inst_TOP_maquinas/Inst_relojes/cont_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y19.XQ       Tcko                  0.631   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_0
+    SLICE_X6Y18.F1       net (fanout=5)        0.636   Inst_TOP_maquinas/Inst_relojes/cont<0>
+    SLICE_X6Y18.X        Tilo                  0.692   Inst_TOP_maquinas/Inst_relojes/cont_cmp_eq0000
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_cmp_eq00001
+    SLICE_X6Y19.SR       net (fanout=1)        1.110   Inst_TOP_maquinas/Inst_relojes/cont_cmp_eq0000
+    SLICE_X6Y19.CLK      Tsrck                 0.867   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.936ns (2.190ns logic, 1.746ns route)
+                                                       (55.6% logic, 44.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     79.486ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_TOP_maquinas/Inst_relojes/cont_1 (FF)
+  Destination:          Inst_TOP_maquinas/Inst_relojes/cont_1 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      3.847ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clock_BUFGP rising at 0.000ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_TOP_maquinas/Inst_relojes/cont_1 to Inst_TOP_maquinas/Inst_relojes/cont_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y19.YQ       Tcko                  0.676   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_1
+    SLICE_X6Y18.F4       net (fanout=4)        0.502   Inst_TOP_maquinas/Inst_relojes/cont<1>
+    SLICE_X6Y18.X        Tilo                  0.692   Inst_TOP_maquinas/Inst_relojes/cont_cmp_eq0000
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_cmp_eq00001
+    SLICE_X6Y19.SR       net (fanout=1)        1.110   Inst_TOP_maquinas/Inst_relojes/cont_cmp_eq0000
+    SLICE_X6Y19.CLK      Tsrck                 0.867   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.847ns (2.235ns logic, 1.612ns route)
+                                                       (58.1% logic, 41.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_TOP_maquinas/Inst_relojes/cont_0 (SLICE_X6Y19.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     81.222ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_TOP_maquinas/Inst_relojes/cont_0 (FF)
+  Destination:          Inst_TOP_maquinas/Inst_relojes/cont_0 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      2.111ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clock_BUFGP rising at 0.000ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_TOP_maquinas/Inst_relojes/cont_0 to Inst_TOP_maquinas/Inst_relojes/cont_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y19.XQ       Tcko                  0.631   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_0
+    SLICE_X6Y19.BX       net (fanout=5)        1.128   Inst_TOP_maquinas/Inst_relojes/cont<0>
+    SLICE_X6Y19.CLK      Tdick                 0.352   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_0
+    -------------------------------------------------  ---------------------------
+    Total                                      2.111ns (0.983ns logic, 1.128ns route)
+                                                       (46.6% logic, 53.4% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "Clock_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_TOP_maquinas/Inst_relojes/cont_1 (SLICE_X6Y19.G4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.497ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_TOP_maquinas/Inst_relojes/cont_1 (FF)
+  Destination:          Inst_TOP_maquinas/Inst_relojes/cont_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.497ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clock_BUFGP rising at 83.333ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_TOP_maquinas/Inst_relojes/cont_1 to Inst_TOP_maquinas/Inst_relojes/cont_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y19.YQ       Tcko                  0.541   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_1
+    SLICE_X6Y19.G4       net (fanout=4)        0.439   Inst_TOP_maquinas/Inst_relojes/cont<1>
+    SLICE_X6Y19.CLK      Tckg        (-Th)    -0.517   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/Mcount_cont_xor<1>11
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.497ns (1.058ns logic, 0.439ns route)
+                                                       (70.7% logic, 29.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_TOP_maquinas/Inst_relojes/cont_1 (SLICE_X6Y19.G1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.539ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_TOP_maquinas/Inst_relojes/cont_0 (FF)
+  Destination:          Inst_TOP_maquinas/Inst_relojes/cont_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.539ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clock_BUFGP rising at 83.333ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_TOP_maquinas/Inst_relojes/cont_0 to Inst_TOP_maquinas/Inst_relojes/cont_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y19.XQ       Tcko                  0.505   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_0
+    SLICE_X6Y19.G1       net (fanout=5)        0.517   Inst_TOP_maquinas/Inst_relojes/cont<0>
+    SLICE_X6Y19.CLK      Tckg        (-Th)    -0.517   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/Mcount_cont_xor<1>11
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.539ns (1.022ns logic, 0.517ns route)
+                                                       (66.4% logic, 33.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_TOP_maquinas/Inst_relojes/cont_0 (SLICE_X6Y19.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.552ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_TOP_maquinas/Inst_relojes/cont_0 (FF)
+  Destination:          Inst_TOP_maquinas/Inst_relojes/cont_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.552ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clock_BUFGP rising at 83.333ns
+  Destination Clock:    Clock_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_TOP_maquinas/Inst_relojes/cont_0 to Inst_TOP_maquinas/Inst_relojes/cont_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y19.XQ       Tcko                  0.505   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_0
+    SLICE_X6Y19.BX       net (fanout=5)        0.902   Inst_TOP_maquinas/Inst_relojes/cont<0>
+    SLICE_X6Y19.CLK      Tckdi       (-Th)    -0.145   Inst_TOP_maquinas/Inst_relojes/cont<0>
+                                                       Inst_TOP_maquinas/Inst_relojes/cont_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.552ns (0.650ns logic, 0.902ns route)
+                                                       (41.9% logic, 58.1% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "Clock_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 81.731ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 0.801ns (Tcl)
+  Physical resource: Inst_TOP_maquinas/Inst_relojes/cont<0>/CLK
+  Logical resource: Inst_TOP_maquinas/Inst_relojes/cont_0/CK
+  Location pin: SLICE_X6Y19.CLK
+  Clock network: Clock_BUFGP
+--------------------------------------------------------------------------------
+Slack: 81.731ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 83.333ns
+  High pulse: 41.666ns
+  High pulse limit: 0.801ns (Tch)
+  Physical resource: Inst_TOP_maquinas/Inst_relojes/cont<0>/CLK
+  Logical resource: Inst_TOP_maquinas/Inst_relojes/cont_0/CK
+  Location pin: SLICE_X6Y19.CLK
+  Clock network: Clock_BUFGP
+--------------------------------------------------------------------------------
+Slack: 81.731ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 0.801ns (Tcl)
+  Physical resource: Inst_TOP_maquinas/Inst_relojes/cont<0>/CLK
+  Logical resource: Inst_TOP_maquinas/Inst_relojes/cont_1/CK
+  Location pin: SLICE_X6Y19.CLK
+  Clock network: Clock_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    3.936|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 7 paths, 0 nets, and 8 connections
+
+Design statistics:
+   Minimum period:   3.936ns{1}   (Maximum frequency: 254.065MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Jul 03 01:10:18 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 129 MB
+
+
+

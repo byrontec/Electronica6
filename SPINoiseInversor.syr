@@ -1,0 +1,784 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: SPINoiseInversor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SPINoiseInversor.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SPINoiseInversor"
+Output Format                      : NGC
+Target Device                      : xc3s50a-4-tq144
+
+---- Source Options
+Top Module Name                    : SPINoiseInversor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/MISO.vhd" in Library work.
+Architecture behavioral of Entity miso is up to date.
+Compiling vhdl file "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/chipselect.vhd" in Library work.
+Architecture behavioral of Entity chipselect is up to date.
+Compiling vhdl file "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/juntar.vhd" in Library work.
+Architecture behavioral of Entity juntar is up to date.
+Compiling vhdl file "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/relojes.vhd" in Library work.
+Architecture behavioral of Entity relojes is up to date.
+Compiling vhdl file "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/WaveFormSupressor.vhd" in Library work.
+Architecture behavioral of Entity waveformsupressor is up to date.
+Compiling vhdl file "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/WaveInversor.vhd" in Library work.
+Architecture behavioral of Entity waveinversor is up to date.
+Compiling vhdl file "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/WaveMixer.vhd" in Library work.
+Architecture behavioral of Entity wavemixer is up to date.
+Compiling vhdl file "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SegundaFaseTop.vhd" in Library work.
+Architecture behavioral of Entity segundafasetop is up to date.
+Compiling vhdl file "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/TOP_maquinas.vhd" in Library work.
+Architecture behavioral of Entity top_maquinas is up to date.
+Compiling vhdl file "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/PhaseController.vhd" in Library work.
+Entity <phasecontroller> compiled.
+Entity <phasecontroller> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.vhd" in Library work.
+Architecture behavioral of Entity spinoiseinversor is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <SPINoiseInversor> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SegundaFaseTop> in library <work> (architecture <behavioral>) with generics.
+	M = 8
+	N = 8
+
+Analyzing hierarchy for entity <TOP_maquinas> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PhaseController> in library <work> (architecture <behavioral>) with generics.
+	M = 7
+	N = 9
+
+Analyzing hierarchy for entity <WaveFormSupressor> in library <work> (architecture <behavioral>) with generics.
+	N = 8
+
+Analyzing hierarchy for entity <WaveInversor> in library <work> (architecture <behavioral>) with generics.
+	N = 8
+
+Analyzing hierarchy for entity <WaveMixer> in library <work> (architecture <behavioral>) with generics.
+	N = 8
+
+Analyzing hierarchy for entity <MISO> in library <work> (architecture <behavioral>) with generics.
+	N = 4
+
+Analyzing hierarchy for entity <chipselect> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <juntar> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <relojes> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <SPINoiseInversor> in library <work> (Architecture <behavioral>).
+Entity <SPINoiseInversor> analyzed. Unit <SPINoiseInversor> generated.
+
+Analyzing generic Entity <SegundaFaseTop> in library <work> (Architecture <behavioral>).
+	M = 8
+	N = 8
+Entity <SegundaFaseTop> analyzed. Unit <SegundaFaseTop> generated.
+
+Analyzing generic Entity <WaveFormSupressor> in library <work> (Architecture <behavioral>).
+	N = 8
+Entity <WaveFormSupressor> analyzed. Unit <WaveFormSupressor> generated.
+
+Analyzing generic Entity <WaveInversor> in library <work> (Architecture <behavioral>).
+	N = 8
+Entity <WaveInversor> analyzed. Unit <WaveInversor> generated.
+
+Analyzing generic Entity <WaveMixer> in library <work> (Architecture <behavioral>).
+	N = 8
+Entity <WaveMixer> analyzed. Unit <WaveMixer> generated.
+
+Analyzing Entity <TOP_maquinas> in library <work> (Architecture <behavioral>).
+Entity <TOP_maquinas> analyzed. Unit <TOP_maquinas> generated.
+
+Analyzing generic Entity <MISO> in library <work> (Architecture <behavioral>).
+	N = 4
+Entity <MISO> analyzed. Unit <MISO> generated.
+
+Analyzing Entity <chipselect> in library <work> (Architecture <behavioral>).
+Entity <chipselect> analyzed. Unit <chipselect> generated.
+
+Analyzing Entity <juntar> in library <work> (Architecture <behavioral>).
+Entity <juntar> analyzed. Unit <juntar> generated.
+
+Analyzing Entity <relojes> in library <work> (Architecture <behavioral>).
+Entity <relojes> analyzed. Unit <relojes> generated.
+
+Analyzing generic Entity <PhaseController> in library <work> (Architecture <behavioral>).
+	M = 7
+	N = 9
+INFO:Xst:1433 - Contents of array <FIFO> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <PhaseController> analyzed. Unit <PhaseController> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <PhaseController>.
+    Related source file is "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/PhaseController.vhd".
+    Found 128x9-bit dual-port RAM <Mram_FIFO> for signal <FIFO>.
+    Found 9-bit register for signal <DataOut>.
+    Found 7-bit up counter for signal <counter>.
+    Found 8-bit register for signal <phaseCounter>.
+    Found 8-bit subtractor for signal <phaseCounter$addsub0000> created at line 33.
+    Found 7-bit adder carry out for signal <phaseCounter$addsub0002> created at line 30.
+    Found 8-bit comparator greatequal for signal <phaseCounter$cmp_ge0000> created at line 32.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Counter(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <PhaseController> synthesized.
+
+
+Synthesizing Unit <WaveFormSupressor>.
+    Related source file is "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/WaveFormSupressor.vhd".
+Unit <WaveFormSupressor> synthesized.
+
+
+Synthesizing Unit <WaveInversor>.
+    Related source file is "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/WaveInversor.vhd".
+    Found 8-bit adder for signal <WaveOutput>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <WaveInversor> synthesized.
+
+
+Synthesizing Unit <WaveMixer>.
+    Related source file is "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/WaveMixer.vhd".
+    Found 8-bit adder carry out for signal <outSignal$addsub0000> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <WaveMixer> synthesized.
+
+
+Synthesizing Unit <MISO>.
+    Related source file is "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/MISO.vhd".
+    Found 1-bit register for signal <SerialOut>.
+    Found 5-bit register for signal <ParallelSignal>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <MISO> synthesized.
+
+
+Synthesizing Unit <chipselect>.
+    Related source file is "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/chipselect.vhd".
+    Found 6-bit up counter for signal <cont>.
+    Found 6-bit comparator less for signal <CS$cmp_lt0000> created at line 25.
+    Found 6-bit comparator greater for signal <lectura$cmp_gt0000> created at line 26.
+    Found 6-bit comparator less for signal <lectura$cmp_lt0000> created at line 26.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 Comparator(s).
+Unit <chipselect> synthesized.
+
+
+Synthesizing Unit <juntar>.
+    Related source file is "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/juntar.vhd".
+    Found 1-bit register for signal <enmaster>.
+    Found 8-bit register for signal <data>.
+    Found 3-bit up counter for signal <contador>.
+    Found 1-bit register for signal <estado<0>>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  10 D-type flip-flop(s).
+Unit <juntar> synthesized.
+
+
+Synthesizing Unit <relojes>.
+    Related source file is "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/relojes.vhd".
+    Found 2-bit up counter for signal <cont>.
+    Found 2-bit comparator less for signal <nuevo$cmp_lt0000> created at line 27.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Comparator(s).
+Unit <relojes> synthesized.
+
+
+Synthesizing Unit <SegundaFaseTop>.
+    Related source file is "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SegundaFaseTop.vhd".
+Unit <SegundaFaseTop> synthesized.
+
+
+Synthesizing Unit <TOP_maquinas>.
+    Related source file is "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/TOP_maquinas.vhd".
+Unit <TOP_maquinas> synthesized.
+
+
+Synthesizing Unit <SPINoiseInversor>.
+    Related source file is "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.vhd".
+Unit <SPINoiseInversor> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 128x9-bit dual-port RAM                               : 1
+# Adders/Subtractors                                   : 4
+ 7-bit adder carry out                                 : 1
+ 8-bit adder                                           : 1
+ 8-bit adder carry out                                 : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 4
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 18
+ 1-bit register                                        : 16
+ 8-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 5
+ 2-bit comparator less                                 : 1
+ 6-bit comparator greater                              : 1
+ 6-bit comparator less                                 : 2
+ 8-bit comparator greatequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <PhaseController>.
+INFO:Xst:3226 - The RAM <Mram_FIFO> will be implemented as a BLOCK RAM, absorbing the following register(s): <DataOut>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 9-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <Clock>         | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <counter>       |          |
+    |     diA            | connected to signal <DataIn>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 128-word x 9-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <Clock>         | rise     |
+    |     addrB          | connected to signal <phaseCounter>  |          |
+    |     doB            | connected to signal <DataOut>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <PhaseController> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 128x9-bit dual-port block RAM                         : 1
+# Adders/Subtractors                                   : 4
+ 7-bit adder carry out                                 : 1
+ 8-bit adder                                           : 1
+ 8-bit adder carry out                                 : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 4
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+# Comparators                                          : 5
+ 2-bit comparator less                                 : 1
+ 6-bit comparator greater                              : 1
+ 6-bit comparator less                                 : 2
+ 8-bit comparator greatequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SPINoiseInversor> ...
+
+Optimizing unit <PhaseController> ...
+
+Optimizing unit <MISO> ...
+
+Optimizing unit <juntar> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SPINoiseInversor, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 42
+ Flip-Flops                                            : 42
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : SPINoiseInversor.ngr
+Top Level Output File Name         : SPINoiseInversor
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 123
+#      GND                         : 1
+#      INV                         : 13
+#      LUT2                        : 22
+#      LUT3                        : 19
+#      LUT3_D                      : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 25
+#      MULT_AND                    : 8
+#      MUXCY                       : 15
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 15
+# FlipFlops/Latches                : 42
+#      FD                          : 7
+#      FDCP_1                      : 5
+#      FDE                         : 9
+#      FDE_1                       : 1
+#      FDR                         : 16
+#      FDRE                        : 4
+# RAMS                             : 1
+#      RAMB16BWE                   : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 14
+#      OBUF                        : 13
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-4 
+
+ Number of Slices:                       40  out of    704     5%  
+ Number of Slice Flip Flops:             42  out of   1408     2%  
+ Number of 4 input LUTs:                 82  out of   1408     5%  
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    108    25%  
+ Number of BRAMs:                         1  out of      3    33%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                            | Load  |
+-----------------------------------+--------------------------------------------------+-------+
+Clock                              | BUFGP                                            | 2     |
+SPI_Clock_inv(SPI_Clock_inv1:O)    | NONE(*)(Inst_TOP_maquinas/Inst_chipselect/cont_0)| 6     |
+SPI_CS_OBUF(SPI_CS1:O)             | NONE(*)(Inst_PhaseController/counter_6)          | 16    |
+SPI_Clock_OBUF(SPI_Clock1:O)       | NONE(*)(Inst_TOP_maquinas/Inst_MISO/SerialOut)   | 19    |
+-----------------------------------+--------------------------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------+-------+
+Control Signal                                                                                               | Buffer(FF name)                                   | Load  |
+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------+-------+
+Inst_TOP_maquinas/Inst_MISO/ParallelSignal_0_and0000(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_0_and00001:O)| NONE(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_0)| 1     |
+Inst_TOP_maquinas/Inst_MISO/ParallelSignal_0_and0001(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_0_and00011:O)| NONE(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_0)| 1     |
+Inst_TOP_maquinas/Inst_MISO/ParallelSignal_1_and0000(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_1_and00001:O)| NONE(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_1)| 1     |
+Inst_TOP_maquinas/Inst_MISO/ParallelSignal_1_and0001(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_1_and00011:O)| NONE(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_1)| 1     |
+Inst_TOP_maquinas/Inst_MISO/ParallelSignal_2_and0000(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_2_and00001:O)| NONE(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_2)| 1     |
+Inst_TOP_maquinas/Inst_MISO/ParallelSignal_2_and0001(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_2_and00011:O)| NONE(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_2)| 1     |
+Inst_TOP_maquinas/Inst_MISO/ParallelSignal_3_and0000(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_3_and00001:O)| NONE(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_3)| 1     |
+Inst_TOP_maquinas/Inst_MISO/ParallelSignal_3_and0001(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_3_and00011:O)| NONE(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_3)| 1     |
+N0(XST_GND:G)                                                                                                | NONE(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_4)| 1     |
+SPI_CS_OBUF(SPI_CS1:O)                                                                                       | NONE(Inst_TOP_maquinas/Inst_MISO/ParallelSignal_4)| 1     |
+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.499ns (Maximum Frequency: 181.851MHz)
+   Minimum input arrival time before clock: 5.213ns
+   Maximum output required time after clock: 9.158ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 3.331ns (frequency: 300.210MHz)
+  Total number of paths / destination ports: 7 / 4
+-------------------------------------------------------------------------
+Delay:               3.331ns (Levels of Logic = 1)
+  Source:            Inst_TOP_maquinas/Inst_relojes/cont_0 (FF)
+  Destination:       Inst_TOP_maquinas/Inst_relojes/cont_0 (FF)
+  Source Clock:      Clock rising
+  Destination Clock: Clock rising
+
+  Data Path: Inst_TOP_maquinas/Inst_relojes/cont_0 to Inst_TOP_maquinas/Inst_relojes/cont_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.591   0.776  Inst_TOP_maquinas/Inst_relojes/cont_0 (Inst_TOP_maquinas/Inst_relojes/cont_0)
+     LUT2:I0->O            2   0.648   0.447  Inst_TOP_maquinas/Inst_relojes/cont_cmp_eq00001 (Inst_TOP_maquinas/Inst_relojes/cont_cmp_eq0000)
+     FDR:R                     0.869          Inst_TOP_maquinas/Inst_relojes/cont_0
+    ----------------------------------------
+    Total                      3.331ns (2.108ns logic, 1.223ns route)
+                                       (63.3% logic, 36.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SPI_Clock_inv'
+  Clock period: 4.379ns (frequency: 228.363MHz)
+  Total number of paths / destination ports: 57 / 12
+-------------------------------------------------------------------------
+Delay:               4.379ns (Levels of Logic = 2)
+  Source:            Inst_TOP_maquinas/Inst_chipselect/cont_0 (FF)
+  Destination:       Inst_TOP_maquinas/Inst_chipselect/cont_0 (FF)
+  Source Clock:      SPI_Clock_inv rising
+  Destination Clock: SPI_Clock_inv rising
+
+  Data Path: Inst_TOP_maquinas/Inst_chipselect/cont_0 to Inst_TOP_maquinas/Inst_chipselect/cont_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.591   0.851  Inst_TOP_maquinas/Inst_chipselect/cont_0 (Inst_TOP_maquinas/Inst_chipselect/cont_0)
+     LUT3_L:I0->LO         1   0.648   0.103  Inst_TOP_maquinas/Inst_chipselect/cont_cmp_eq0000_SW0 (N8)
+     LUT4:I3->O            6   0.648   0.669  Inst_TOP_maquinas/Inst_chipselect/cont_cmp_eq0000 (Inst_TOP_maquinas/Inst_chipselect/cont_cmp_eq0000)
+     FDR:R                     0.869          Inst_TOP_maquinas/Inst_chipselect/cont_0
+    ----------------------------------------
+    Total                      4.379ns (2.756ns logic, 1.623ns route)
+                                       (62.9% logic, 37.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SPI_CS_OBUF'
+  Clock period: 5.499ns (frequency: 181.851MHz)
+  Total number of paths / destination ports: 169 / 37
+-------------------------------------------------------------------------
+Delay:               5.499ns (Levels of Logic = 3)
+  Source:            Inst_PhaseController/counter_2 (FF)
+  Destination:       Inst_PhaseController/counter_6 (FF)
+  Source Clock:      SPI_CS_OBUF rising
+  Destination Clock: SPI_CS_OBUF rising
+
+  Data Path: Inst_PhaseController/counter_2 to Inst_PhaseController/counter_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.591   0.776  Inst_PhaseController/counter_2 (Inst_PhaseController/counter_2)
+     LUT3_D:I0->O          2   0.648   0.479  Inst_PhaseController/Result<3>11 (Inst_PhaseController/Result<3>_bdd0)
+     LUT3_D:I2->LO         1   0.648   0.132  Inst_PhaseController/Result<6>11 (N12)
+     LUT3:I2->O            7   0.648   0.708  Inst_PhaseController/counter_cmp_eq000011 (Inst_PhaseController/counter_cmp_eq0000)
+     FDR:R                     0.869          Inst_PhaseController/counter_0
+    ----------------------------------------
+    Total                      5.499ns (3.404ns logic, 2.095ns route)
+                                       (61.9% logic, 38.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SPI_Clock_OBUF'
+  Clock period: 3.771ns (frequency: 265.182MHz)
+  Total number of paths / destination ports: 67 / 26
+-------------------------------------------------------------------------
+Delay:               3.771ns (Levels of Logic = 1)
+  Source:            Inst_TOP_maquinas/Inst_juntar/contador_2 (FF)
+  Destination:       Inst_TOP_maquinas/Inst_juntar/contador_2 (FF)
+  Source Clock:      SPI_Clock_OBUF rising
+  Destination Clock: SPI_Clock_OBUF rising
+
+  Data Path: Inst_TOP_maquinas/Inst_juntar/contador_2 to Inst_TOP_maquinas/Inst_juntar/contador_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            11   0.591   1.076  Inst_TOP_maquinas/Inst_juntar/contador_2 (Inst_TOP_maquinas/Inst_juntar/contador_2)
+     LUT4:I0->O            4   0.648   0.587  Inst_TOP_maquinas/Inst_juntar/contador_and00001 (Inst_TOP_maquinas/Inst_juntar/contador_and0000)
+     FDRE:R                    0.869          Inst_TOP_maquinas/Inst_juntar/contador_0
+    ----------------------------------------
+    Total                      3.771ns (2.108ns logic, 1.663ns route)
+                                       (55.9% logic, 44.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SPI_CS_OBUF'
+  Total number of paths / destination ports: 159 / 17
+-------------------------------------------------------------------------
+Offset:              5.213ns (Levels of Logic = 10)
+  Source:            Phase_Offset<0> (PAD)
+  Destination:       Inst_PhaseController/phaseCounter_6 (FF)
+  Destination Clock: SPI_CS_OBUF rising
+
+  Data Path: Phase_Offset<0> to Inst_PhaseController/phaseCounter_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.849   0.563  Phase_Offset_0_IBUF (Phase_Offset_0_IBUF)
+     LUT2:I0->O            1   0.648   0.000  Inst_PhaseController/Madd_phaseCounter_addsub0002_lut<0> (Inst_PhaseController/Madd_phaseCounter_addsub0002_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  Inst_PhaseController/Madd_phaseCounter_addsub0002_cy<0> (Inst_PhaseController/Madd_phaseCounter_addsub0002_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_PhaseController/Madd_phaseCounter_addsub0002_cy<1> (Inst_PhaseController/Madd_phaseCounter_addsub0002_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_PhaseController/Madd_phaseCounter_addsub0002_cy<2> (Inst_PhaseController/Madd_phaseCounter_addsub0002_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_PhaseController/Madd_phaseCounter_addsub0002_cy<3> (Inst_PhaseController/Madd_phaseCounter_addsub0002_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_PhaseController/Madd_phaseCounter_addsub0002_cy<4> (Inst_PhaseController/Madd_phaseCounter_addsub0002_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_PhaseController/Madd_phaseCounter_addsub0002_cy<5> (Inst_PhaseController/Madd_phaseCounter_addsub0002_cy<5>)
+     XORCY:CI->O           1   0.844   0.452  Inst_PhaseController/Madd_phaseCounter_addsub0002_xor<6> (Inst_PhaseController/phaseCounter_addsub0002<6>)
+     LUT3:I2->O            1   0.648   0.000  Inst_PhaseController/phaseCounter_mux0001<6>1 (Inst_PhaseController/phaseCounter_mux0001<6>)
+     FD:D                      0.252          Inst_PhaseController/phaseCounter_6
+    ----------------------------------------
+    Total                      5.213ns (4.198ns logic, 1.015ns route)
+                                       (80.5% logic, 19.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SPI_Clock_OBUF'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              1.858ns (Levels of Logic = 1)
+  Source:            SPI_MISO (PAD)
+  Destination:       Inst_TOP_maquinas/Inst_juntar/data_6 (FF)
+  Destination Clock: SPI_Clock_OBUF rising
+
+  Data Path: SPI_MISO to Inst_TOP_maquinas/Inst_juntar/data_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.849   0.757  SPI_MISO_IBUF (SPI_MISO_IBUF)
+     FDE:D                     0.252          Inst_TOP_maquinas/Inst_juntar/data_1
+    ----------------------------------------
+    Total                      1.858ns (1.101ns logic, 0.757ns route)
+                                       (59.3% logic, 40.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              7.591ns (Levels of Logic = 2)
+  Source:            Inst_TOP_maquinas/Inst_relojes/cont_1 (FF)
+  Destination:       SPI_Clock (PAD)
+  Source Clock:      Clock rising
+
+  Data Path: Inst_TOP_maquinas/Inst_relojes/cont_1 to SPI_Clock
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.591   0.730  Inst_TOP_maquinas/Inst_relojes/cont_1 (Inst_TOP_maquinas/Inst_relojes/cont_1)
+     LUT2:I0->O           20   0.648   1.102  SPI_Clock1 (SPI_Clock_OBUF)
+     OBUF:I->O                 4.520          SPI_Clock_OBUF (SPI_Clock)
+    ----------------------------------------
+    Total                      7.591ns (5.759ns logic, 1.832ns route)
+                                       (75.9% logic, 24.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SPI_Clock_inv'
+  Total number of paths / destination ports: 6 / 1
+-------------------------------------------------------------------------
+Offset:              9.158ns (Levels of Logic = 3)
+  Source:            Inst_TOP_maquinas/Inst_chipselect/cont_1 (FF)
+  Destination:       SPI_CS (PAD)
+  Source Clock:      SPI_Clock_inv rising
+
+  Data Path: Inst_TOP_maquinas/Inst_chipselect/cont_1 to SPI_CS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.591   0.900  Inst_TOP_maquinas/Inst_chipselect/cont_1 (Inst_TOP_maquinas/Inst_chipselect/cont_1)
+     LUT3:I0->O            2   0.648   0.590  SPI_CS1_SW0 (N6)
+     LUT4:I0->O           27   0.648   1.261  SPI_CS1 (SPI_CS_OBUF)
+     OBUF:I->O                 4.520          SPI_CS_OBUF (SPI_CS)
+    ----------------------------------------
+    Total                      9.158ns (6.407ns logic, 2.751ns route)
+                                       (70.0% logic, 30.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SPI_Clock_OBUF'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.531ns (Levels of Logic = 1)
+  Source:            Inst_TOP_maquinas/Inst_MISO/SerialOut (FF)
+  Destination:       SPI_MOSI (PAD)
+  Source Clock:      SPI_Clock_OBUF falling
+
+  Data Path: Inst_TOP_maquinas/Inst_MISO/SerialOut to SPI_MOSI
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            1   0.591   0.420  Inst_TOP_maquinas/Inst_MISO/SerialOut (Inst_TOP_maquinas/Inst_MISO/SerialOut)
+     OBUF:I->O                 4.520          SPI_MOSI_OBUF (SPI_MOSI)
+    ----------------------------------------
+    Total                      5.531ns (5.111ns logic, 0.420ns route)
+                                       (92.4% logic, 7.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SPI_CS_OBUF'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              7.367ns (Levels of Logic = 1)
+  Source:            Inst_PhaseController/Mram_FIFO (RAM)
+  Destination:       SPI_Inverted<7> (PAD)
+  Source Clock:      SPI_CS_OBUF rising
+
+  Data Path: Inst_PhaseController/Mram_FIFO to SPI_Inverted<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWE:CLKB->DOB7    1   2.427   0.420  Inst_PhaseController/Mram_FIFO (SPI_Inverted_7_OBUF)
+     OBUF:I->O                 4.520          SPI_Inverted_7_OBUF (SPI_Inverted<7>)
+    ----------------------------------------
+    Total                      7.367ns (6.947ns logic, 0.420ns route)
+                                       (94.3% logic, 5.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.42 secs
+ 
+--> 
+
+Total memory usage is 242360 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

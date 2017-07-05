@@ -1,0 +1,22 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Jul 03 01:11:08 2017
+
+drc -z SPINoiseInversor.ncd SPINoiseInversor.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net SPI_CS_OBUF is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net SPI_Clock_OBUF is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net SPI_Clock_inv is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:1155 - Issue with pin connections and/or configuration
+   on block:<Inst_PhaseController/Mram_FIFO>:<RAMB16BWE_RAMB16BWE>.  The block
+   is configured to use input parity pin DIAP0. There is dangling output for
+   parity pin DOPA0.
+DRC detected 0 errors and 4 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

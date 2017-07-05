@@ -1,0 +1,135 @@
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor/SPINoiseInversor/SPINoiseInversor.syr" 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+xst -intstyle ise -ifn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.xst" -ofn "C:/Users/Byron Paiz/Documents/ProyectoE6/SPINoiseInversor - copia/SPINoiseInversor/SPINoiseInversor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Numato.ucf -p xc3s50a-tq144-4 "SPINoiseInversor.ngc" SPINoiseInversor.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o SPINoiseInversor_map.ncd SPINoiseInversor.ngd SPINoiseInversor.pcf 
+par -w -intstyle ise -ol high -t 1 SPINoiseInversor_map.ncd SPINoiseInversor.ncd SPINoiseInversor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SPINoiseInversor.twx SPINoiseInversor.ncd -o SPINoiseInversor.twr SPINoiseInversor.pcf -ucf Numato.ucf 
+bitgen -intstyle ise -f SPINoiseInversor.ut SPINoiseInversor.ncd 
